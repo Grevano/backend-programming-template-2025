@@ -22,6 +22,7 @@ module.exports = (app) => {
   // Change password
   route.put('/:id/change-password', usersController.changePassword);
 
-  // Delete user
+  // Login user
+  route.post('/login', usersController.loginUser);
   route.delete('/:id', usersController.deleteUser);
 };
